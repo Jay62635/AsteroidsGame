@@ -24,7 +24,9 @@ public void keyPressed(){
   else if (key == 'a')
     spaceship.turn(-5);
   else if (key == 'w')
-    spaceship.accelerate(3);
+    spaceship.accelerate(0.5);
+  else if (key == 's')
+    spaceship.accelerate(-0.5);
   else if (key == ' '){
     background(255);
     spaceship.setCenterX((int)(Math.random()*501));
